@@ -1,7 +1,7 @@
 # pip3 install RPLCD
 from RPLCD.gpio import CharLCD
 import RPi.GPIO as GPIO
-from time import sleep
+
 
 rsPIN = 18        
 enablePIN = 23    
