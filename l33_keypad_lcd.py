@@ -22,7 +22,7 @@ lcd = CharLCD(
     pins_data=[d4PIN, d5PIN, d6PIN, d7PIN]
 )
 
- LCD
+ #LCD
 lcd.clear()
 line1 = text[:16] if text else ""
 line2 = text[16:32] if len(text) > 16 else ""
