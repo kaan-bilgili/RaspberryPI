@@ -99,7 +99,7 @@ def close_bus():
 
 if __name__ == "__main__":
     init(0x27, True, 1)
-    write_text(0, 0, "HELLO")
-    write_text(0, 1, "KAAN")
+    write(0, 0, "HELLO")
+    write(0, 1, "KAAN")
     time.sleep(2)
     close_bus()
