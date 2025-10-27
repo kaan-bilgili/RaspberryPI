@@ -46,7 +46,7 @@ def keypad():
                             if KEYS[i][j] == "D":
                                 key = False
                                 return returnVal
-                                break
+                                
                             returnVal += (KEYS[i][j])
                         lastInput=KEYS[i][j]
                         last_pressed_time= datetime.now()
@@ -59,7 +59,7 @@ def keypad():
         GPIO.cleanup()
         
     finally :
-        print(returnVal)
+        print(f"{returnVal} is the final value.)
 
 password = input("write your password\t")
 while True:

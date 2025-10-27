@@ -1,5 +1,5 @@
 class keypad:
-    def __init__(self, rows = [17,27,22,5] ,
+    def __init__(self, rows = [16,20,21,5] ,
                  columns = [6,13,19,26] ,
                  labels = [
                         ['1','2','3','A'],

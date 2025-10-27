@@ -34,11 +34,10 @@ try:
             for j, c in enumerate(columns):
                 if GPIO.input(c) == 0:
                     print("BUTTON HAS PRESSED")
-                    if lastInput != KEYS[i][j]:
-                        print(f"{KEYS[i][j]} has pressed")
+                    print(f"{KEYS[i][j]} has pressed")
                     lastInput=KEYS[i][j]
                     
-                    time.sleep(0.4)
+                    time.sleep(0.2)  #debounce
             GPIO.output(r,1)
 except KeyboardInterrupt:
     print("GPIO is free")
